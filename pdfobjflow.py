@@ -27,7 +27,7 @@ try:
     import pydot
 except:
     print "You must install pydot:"
-    print "  sudo aptitude install python-pydot"
+    print "  pip2 install pydot"
     sys.exit()
 
 f = sys.stdin.readlines()
