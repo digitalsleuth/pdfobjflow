@@ -51,5 +51,5 @@ for l in f:
 o.write("}")
 o.close()
 
-graph = pydot.graph_from_dot_file('pdfobjflow.dot')
+(graph, ) = pydot.graph_from_dot_file('pdfobjflow.dot')
 graph.write_png('pdfobjflow.png')
