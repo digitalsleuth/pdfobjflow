@@ -27,7 +27,7 @@ try:
     import pydot
 except:
     print "You must install pydot:"
-    print "  sudo aptitude install python-pydot"
+    print "  pip2 install pydot"
     sys.exit()
 
 f = sys.stdin.readlines()
@@ -51,5 +51,5 @@ for l in f:
 o.write("}")
 o.close()
 
-graph = pydot.graph_from_dot_file('pdfobjflow.dot')
+(graph, ) = pydot.graph_from_dot_file('pdfobjflow.dot')
 graph.write_png('pdfobjflow.png')
